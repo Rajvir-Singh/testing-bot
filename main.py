@@ -91,17 +91,17 @@ def main():
     #dp.add_handler(MessageHandler(Filters.photo, image_handler))
 
     dp.add_error_handler(error)
-
+    '''
     # Start the Bot
     updater.start_webhook(listen="0.0.0.0",port=PORT,url_path=TOKEN)
     # updater.bot.set_webhook(url=settings.WEBHOOK_URL)
     updater.bot.set_webhook(APP_NAME + keys.API_KEY)
+    '''
 
 
-
-    ''' Stopping Polling
+    ##Stopping Polling
     updater.start_polling()
     updater.idle()
-    '''
+
 
 main()
